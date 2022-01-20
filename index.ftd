@@ -273,6 +273,7 @@ border-color if $fpm.dark-mode: #343434
 --- ftd.row:
 position: left
 spacing: 25
+width: fill
 id: left-side
 
 --- ftd.row:
