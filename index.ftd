@@ -227,6 +227,7 @@ color: black
 color if $fpm.dark-mode: $neutral
 line-height: 22
 align: center
+white-space: nowrap
 
 -- ftd.text header-link: $title
 caption title:
@@ -238,6 +239,7 @@ color if $fpm.dark-mode: $neutral
 link: $link
 line-height: 22
 align: center
+white-space: nowrap
 
 
 -- ftd.column h0:
