@@ -39,7 +39,7 @@ toc-item list children:
 -- ftd.column page:
 width: fill
 background-color: $neutral
-background-color if $fpm.dark-mode: $neutral-700
+background-color if $ftd.dark-mode: $neutral-700
 open: content-container
 
 --- ftd.column:
@@ -146,7 +146,7 @@ toc-item list toc: $toc
 width: fill
 open: main-container
 background-color: $neutral
-background-color if $fpm.dark-mode: $neutral-700
+background-color if $ftd.dark-mode: $neutral-700
 
 
 --- header:
@@ -177,7 +177,7 @@ toc-item list toc: $toc
 width: fill
 open: main-container
 background-color: $neutral
-background-color if $fpm.dark-mode: $neutral-700
+background-color if $ftd.dark-mode: $neutral-700
 
 
 --- ftd.column:
@@ -224,7 +224,7 @@ size: 16
 style: semi-bold
 font: apple-system
 color: black
-color if $fpm.dark-mode: $neutral
+color if $ftd.dark-mode: $neutral
 line-height: 22
 align: center
 white-space: nowrap
@@ -235,7 +235,7 @@ string link:
 size: 16
 font: apple-system
 color: black
-color if $fpm.dark-mode: $neutral
+color if $ftd.dark-mode: $neutral
 link: $link
 line-height: 22
 align: center
@@ -252,7 +252,7 @@ padding-horizontal: 90
 text: $title
 size: 40
 color: black
-color if $fpm.dark-mode: $neutral
+color if $ftd.dark-mode: $neutral
 style: bold
 padding-bottom: 24
 font: apple-system
@@ -265,12 +265,12 @@ body: $body
 -- ftd.row header:
 width: fill
 background-color: white
-background-color if $fpm.dark-mode: $neutral-700
+background-color if $ftd.dark-mode: $neutral-700
 padding-horizontal: 20
 padding-vertical: 10
 border-bottom: 1
 border-color: #e1e1e1
-border-color if $fpm.dark-mode: #343434
+border-color if $ftd.dark-mode: #343434
 
 --- ftd.row:
 position: left
@@ -309,7 +309,7 @@ width: auto
 id: action-container
 
 --- ftd.image:
-if: not $fpm.dark-mode
+if: not $ftd.dark-mode
 src: https://res.cloudinary.com/dphj6havg/image/upload/v1640938143/github-dark_xeu6ot.svg
 width: 20
 min-width: 20
@@ -319,7 +319,7 @@ align: center
 --- container: action-container
 
 --- ftd.image:
-if:  $fpm.dark-mode
+if:  $ftd.dark-mode
 src: https://res.cloudinary.com/dphj6havg/image/upload/v1640938143/github-light_thra25.svg
 width: 20
 min-width: 20
@@ -329,7 +329,7 @@ align: center
 --- container: action-container
 
 --- ftd.image:
-if: not $fpm.dark-mode
+if: not $ftd.dark-mode
 src: https://res.cloudinary.com/dphj6havg/image/upload/v1640938217/dark-mode_mfy9hd.svg
 height: 18
 $event-click$: message-host enable-dark-mode
@@ -338,7 +338,7 @@ align: center
 --- container: action-container
 
 --- ftd.image:
-if:  $fpm.dark-mode
+if:  $ftd.dark-mode
 src: https://res.cloudinary.com/dphj6havg/image/upload/v1641367492/light-mode_o0zne7.svg
 height: 18
 $event-click$: message-host enable-light-mode
@@ -349,12 +349,12 @@ align: center
 -- ftd.row header-mobile:
 width: fill
 background-color: white
-background-color if $fpm.dark-mode: $neutral-700
+background-color if $ftd.dark-mode: $neutral-700
 padding-horizontal: 20
 padding-vertical: 10
 border-bottom: 1
 border-color: #e1e1e1
-border-color if $fpm.dark-mode: #343434
+border-color if $ftd.dark-mode: #343434
 
 
 --- ftd.row:
@@ -399,7 +399,7 @@ link: $github
 --- ftd.image:
 src: https://res.cloudinary.com/dphj6havg/image/upload/v1640938217/dark-mode_mfy9hd.svg
 height: 18
-$event-click$: toggle $fpm.dark-mode
+$event-click$: toggle $ftd.dark-mode
 
 
 -- ftd.text footer-link:
@@ -620,7 +620,7 @@ padding-top: 3
 padding-bottom: 3
 font: apple-system
 color: $neutral-700
-color if $fpm.dark-mode: $neutral-200
+color if $ftd.dark-mode: $neutral-200
 
 --- toc-instance:
 $loop$: $toc.children as $obj
@@ -640,7 +640,7 @@ padding-right: 20
 padding-bottom: 40
 border-right: 1
 border-color: #ebedef
-border-color if $fpm.dark-mode: #343434
+border-color if $ftd.dark-mode: #343434
 
 --- toc-instance:
 $loop$: $toc-obj as $obj
@@ -660,12 +660,12 @@ padding-right: 20
 padding-bottom: 40
 border-right: 1
 border-color: #ebedef
-border-color if $fpm.dark-mode: $neutral-700
+border-color if $ftd.dark-mode: $neutral-700
 anchor: window
 left: 0
 top: 0
 background-color: white
-background-color if $fpm.dark-mode: $neutral-700
+background-color if $ftd.dark-mode: $neutral-700
 shadow-offset-x: 3
 shadow-offset-y: 0
 shadow-size: 1
@@ -687,7 +687,7 @@ text: $body
 size: 15
 line-height: 24
 color: $neutral-700
-color if $fpm.dark-mode: $neutral-200
+color if $ftd.dark-mode: $neutral-200
 padding-bottom: 8
 font: apple-system
 
@@ -708,7 +708,7 @@ text: $title
 size: 46
 line-height: 46
 color: $neutral-800
-color if $fpm.dark-mode: $neutral
+color if $ftd.dark-mode: $neutral
 style: bold
 padding-bottom: 16
 padding-top: 8
@@ -733,7 +733,7 @@ text: $title
 size: 19
 line-height: 24
 color: $neutral-800
-color if $fpm.dark-mode: $neutral
+color if $ftd.dark-mode: $neutral
 style: italic
 padding-bottom: 8
 padding-top: 16
@@ -758,7 +758,7 @@ region: title
 size: 30
 line-height: 40
 color: $neutral-800
-color if $fpm.dark-mode: $neutral
+color if $ftd.dark-mode: $neutral
 style: bold
 padding-bottom: 8
 padding-top: 16
@@ -783,7 +783,7 @@ region: title
 size: 26
 line-height: 32
 color: $neutral-800
-color if $fpm.dark-mode: $neutral
+color if $ftd.dark-mode: $neutral
 style: bold
 padding-bottom: 8
 padding-top: 16
@@ -808,7 +808,7 @@ region: title
 size: 21
 line-height: 30
 color: $neutral-800
-color if $fpm.dark-mode: $neutral
+color if $ftd.dark-mode: $neutral
 style: bold
 padding-bottom: 8
 padding-top: 16
@@ -833,7 +833,7 @@ region: title
 size: 18
 line-height: 24
 color: $neutral-800
-color if $fpm.dark-mode: $neutral
+color if $ftd.dark-mode: $neutral
 style: bold
 padding-bottom: 12
 padding-top: 34
@@ -856,7 +856,7 @@ region: title
 size: 16
 line-height: 22
 color: $neutral-800
-color if $fpm.dark-mode: $neutral
+color if $ftd.dark-mode: $neutral
 style: bold
 padding-bottom: 12
 padding-top: 34
@@ -976,7 +976,7 @@ font: apple-system
 width: fill
 text-align: center
 style: bold
-color if $fpm.dark-mode: $neutral
+color if $ftd.dark-mode: $neutral
 
 
 --- ftd.text:
@@ -987,12 +987,12 @@ line-height: 26
 font: apple-system
 width: fill
 text-align: center
-color if $fpm.dark-mode: $neutral
+color if $ftd.dark-mode: $neutral
 
 -- ftd.row testimony-list:
 width: fill
 background-color: #f5f6f7
-background-color if $fpm.dark-mode: #2b3136
+background-color if $ftd.dark-mode: #2b3136
 open: main-container
 
 --- ftd.row:
@@ -1038,7 +1038,7 @@ font: apple-system
 width: fill
 text-align: center
 style: bold
-color if $fpm.dark-mode: $neutral
+color if $ftd.dark-mode: $neutral
 
 --- ftd.text: $designation
 width: fill
@@ -1046,7 +1046,7 @@ size: 14
 font: apple-system
 width: fill
 text-align: center
-color if $fpm.dark-mode: $neutral
+color if $ftd.dark-mode: $neutral
 
 --- ftd.text:
 text: $body
@@ -1056,7 +1056,7 @@ line-height: 26
 font: apple-system
 width: fill
 text-align: center
-color if $fpm.dark-mode: $neutral
+color if $ftd.dark-mode: $neutral
 
 
 -- ftd.iframe iframe:
@@ -1137,7 +1137,7 @@ align: $align
 if: $caption is not null
 text: $caption
 color: $neutral-800
-color if $fpm.dark-mode: $neutral
+color if $ftd.dark-mode: $neutral
 align: center
 width: fill
 size: 17
@@ -1319,7 +1319,7 @@ if: $link is not null
 link: $link
 size: 16
 color: $neutral-700
-color if $fpm.dark-mode: white
+color if $ftd.dark-mode: white
 font: apple-system
 style: medium
 
@@ -1333,12 +1333,12 @@ width: 16
 --- ftd.text: $title
 if: $link is null
 color: $neutral-600
-color if $fpm.dark-mode: white
+color if $ftd.dark-mode: white
 font: apple-system
 style: medium
 
 
 -- ftd.text highlight: $title
 caption title:
-color if $fpm.dark-mode: yellow
-background-color if not $fpm.dark-mode: yellow
+color if $ftd.dark-mode: yellow
+background-color if not $ftd.dark-mode: yellow
